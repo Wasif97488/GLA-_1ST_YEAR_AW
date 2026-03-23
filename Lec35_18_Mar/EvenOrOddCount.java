@@ -1,0 +1,34 @@
+package Lec35_18_Mar;
+
+import java.util.Scanner;
+
+public class EvenOrOddCount {
+	
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int size = sc.nextInt();
+	int[] a = new int[size];
+	
+	
+	for(int i=0;i<size;i++)
+	{
+		a[i]=sc.nextInt();
+	}
+	int even=0,odd=0;
+	for(int i=0;i<size;i++)
+	{
+		if(a[i]%2==0)
+		{
+			even++;
+		}
+		else
+		{
+			odd++;
+		}
+	}
+	
+	System.out.println("The Even COunt "+ even +" The Odd COunt is "+odd);
+		
+	}
+
+}
